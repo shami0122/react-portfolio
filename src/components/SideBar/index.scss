@@ -1,6 +1,6 @@
  .nav-bar{
      background: #181818;
-     width: 70px;
+     width: 85px;
      height: 100%;
      position: absolute;
      top:0;
@@ -15,11 +15,11 @@
      img{
          display: block;
          margin: 8px auto;
-         width: 35px;
+         width: 45px;
          height: auto;
 
          &.sub-logo{
-             width:80px;
+             width:95px;
          }
      }
  }
@@ -34,11 +34,11 @@
      width: 100%;
 
      a{
-         font-size: 22px;
+         font-size: 40px;
          color: #4d4d4e;
          display:block;
          line-height: 51px;
-         height:51px;
+         height:70px;
          position: relative;
          text-decoration: none;
 
@@ -60,7 +60,8 @@
 
          &:after{
              content: '';
-             font-size: 11px;
+             font-size: 12px;
+             font-weight: bold;
              letter-spacing: 2px;
              position: absolute;
              bottom: 0;
@@ -69,6 +70,7 @@
              text-align: center;
              opacity: 0;
              transition: all 0.3s ease-out;
+             height: 70px
          }
 
          &:first-child{
@@ -89,4 +91,34 @@
             content: 'CONTACT';
         }
     }
+
+    a.active{
+        svg{
+            color: #ffd700;
+        }
+    }
+ }
+
+ ul{
+     position: absolute;
+     bottom: 50px;
+     width: 100%;
+     display: block;
+     padding: 0;
+     list-style: none;
+     text-align: center;
+     margin: 0;
+
+     li{
+         a{
+             padding: 7px 0;
+             display: block;
+             font-size: 30px;
+             line-height: 16px;
+         }
+
+         &:hover svg{
+            color: #ffd700;
+         }
+     }
  }
